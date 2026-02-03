@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,13 +20,6 @@ export default function Footer() {
             <p className="text-sm text-[#888]">
               © {currentYear} All rights reserved.
             </p>
-          </div>
-
-          {/* Built With */}
-          <div className="flex items-center gap-1 text-sm text-[#888]">
-            <span>Built with</span>
-            <Heart size={14} className="text-[#ff6b6b] fill-[#ff6b6b]" />
-            <span>using Next.js & Tailwind</span>
           </div>
 
           {/* Social Links */}
@@ -59,12 +52,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Tech Stack */}
-        <div className="mt-8 pt-8 border-t border-[#1a1a1a] text-center">
-          <p className="text-xs text-[#666] font-mono">
-            Next.js 15 • Tailwind CSS • Framer Motion • Vercel
-          </p>
-        </div>
       </div>
     </footer>
   );
